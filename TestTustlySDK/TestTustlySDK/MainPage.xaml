@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestTustlySDK.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout VerticalOptions="Fill">
+        <Frame
+            Padding="24"
+            BackgroundColor="#2196F3"
+            CornerRadius="0">
+            <Label
+                FontSize="36"
+                HorizontalTextAlignment="Center"
+                Text="Trustly SDK!"
+                TextColor="White" />
+        </Frame>
+        <Entry
+            x:Name="txtUrl"
+            Margin="20,30,20,0"
+            Keyboard="Url"
+            Placeholder="Enter URL" />
+        <Button
+            x:Name="btnGo"
+            Margin="10"
+            Text="Go" />
+    </StackLayout>
+
+</ContentPage>
