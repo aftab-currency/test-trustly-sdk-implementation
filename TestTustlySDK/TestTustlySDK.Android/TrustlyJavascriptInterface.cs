@@ -39,6 +39,13 @@ namespace TestTustlySDK.Droid
 
                 return true;
             }
+            else
+            {
+                Intent intent = new Intent();
+                intent.SetAction(Intent.ActionView);
+                intent.SetData(Uri.Parse(URIScheme.ToString()));
+                activity.StartActivityForResult(intent, 0);
+            }
 
             return false;
         }
