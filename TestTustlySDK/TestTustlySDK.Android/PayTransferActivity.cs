@@ -9,6 +9,9 @@ namespace TestTustlySDK.Droid
 {
     [Activity(Label = "PayTransferActivity", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
          ScreenOrientation = ScreenOrientation.Portrait, LaunchMode = LaunchMode.SingleTop, ResizeableActivity = false)]
+    [IntentFilter(new[] { Android.Content.Intent.ActionView },
+                  DataSchemes = new[] { "trustlyOpenURLScheme" },
+                  Categories = new[] { Android.Content.Intent.CategoryDefault, Android.Content.Intent.CategoryBrowsable })]
     public class PayTransferActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

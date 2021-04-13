@@ -10,13 +10,7 @@ namespace TestTustlySDK.Droid
 {
     [Activity(Label = "TestTustlySDK", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     [IntentFilter(new[] { Android.Content.Intent.ActionView },
-                  DataSchemes = new[] { "http", "https" },
-                  DataHost = "acemoneytransfer.com",
-                  AutoVerify = true,
-                  DataPathPrefixes = new[] { "/" },
-                  Categories = new[] { Android.Content.Intent.CategoryDefault, Android.Content.Intent.CategoryBrowsable })]
-    [IntentFilter(new[] { Android.Content.Intent.ActionView },
-                  DataSchemes = new[] { "acemoneytransfer", "com.acemoneytransfer.webview" },
+                  DataSchemes = new[] { "acemoneytransfer" },
                   Categories = new[] { Android.Content.Intent.CategoryDefault, Android.Content.Intent.CategoryBrowsable })]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
